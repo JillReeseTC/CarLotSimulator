@@ -29,14 +29,6 @@ namespace CarLotSimulator
         {
             Console.WriteLine($"The car horn goes {HonkNoise}");
         }
-         
-        
-
-
-
-
-
-
 
 
     }
