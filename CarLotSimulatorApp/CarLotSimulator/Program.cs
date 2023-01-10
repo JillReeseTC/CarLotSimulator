@@ -1,6 +1,4 @@
 ﻿using System;
-using Car;
-using Carlot;
 using Microsoft.VisualBasic;
 
 namespace CarLotSimulator

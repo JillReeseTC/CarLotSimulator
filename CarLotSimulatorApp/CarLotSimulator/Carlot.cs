@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Car;
+
 
 
 namespace CarLotSimulator
@@ -19,7 +19,7 @@ namespace CarLotSimulator
        
 
 
-        public static void ListCars(listcars)
+        public void ListCars(List<Car> listcars)
         {
             foreach (var item in listcars)
             {
