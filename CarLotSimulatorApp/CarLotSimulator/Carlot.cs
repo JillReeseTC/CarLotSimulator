@@ -26,8 +26,8 @@ namespace CarLotSimulator
                 Console.WriteLine(item.Year);
                 Console.WriteLine(item.Make);
                 Console.WriteLine(item.Model);
-                Car.MakeEngineNoise(item.EngineNoise);
-                Car.MakeHonkNoise(item.HonkNoise);
+                item.MakeEngineNoise(item.EngineNoise);
+                item.MakeHonkNoise(item.HonkNoise);
                 Console.WriteLine();
             }
         }
