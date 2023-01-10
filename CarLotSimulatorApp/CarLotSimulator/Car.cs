@@ -8,10 +8,23 @@ namespace CarLotSimulator
 {
     public class Car
     {
-    //Default Constructor
-    public Car()
-    {
-    }
+        //Default Constructor
+        public Car()
+        {
+        }
+
+        //Custom Constructor
+        public Car(int? year, string? make, string? model, string? engineNoise, string? honkNoise, bool isDriveable)
+        {
+            Year = year;
+            Make = make;
+            Model = model;
+            EngineNoise = engineNoise;
+            HonkNoise = honkNoise;
+            IsDriveable = isDriveable;
+        }
+
+
         //Properties for Car
         public int? Year { get; set; }
         public string? Make { get; set; } 
@@ -20,14 +33,14 @@ namespace CarLotSimulator
         public string? HonkNoise { get; set; }
         public bool? IsDriveable { get; set; } = true;
 
-        public static void MakeEngineNoise(string? EngineNoise)
+        public static void MakeEngineNoise(string? engineNoise)
         {
-            Console.WriteLine($"The car goes {EngineNoise}");
+            Console.WriteLine(engineNoise);
         }
 
-        public static void MakeHonkNoise(string? HonkNoise)
+        public static void MakeHonkNoise(string? honkNoise)
         {
-            Console.WriteLine($"The car horn goes {HonkNoise}");
+            Console.WriteLine(honkNoise);
         }
 
 

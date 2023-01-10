@@ -1,4 +1,7 @@
 ﻿using System;
+using Car;
+using Carlot;
+using Microsoft.VisualBasic;
 
 namespace CarLotSimulator
 {
@@ -6,17 +9,50 @@ namespace CarLotSimulator
     {
         static void Main(string[] args)
         {
-            //TODO
-
-            //Create a seperate class file called Car
-            //Car shall have the following properties: Year, Make, Model, EngineNoise, HonkNoise, IsDriveable
-            //Car shall have the following methods: MakeEngineNoise(), MakeHonkNoise()
-            //The methods should take one string parameter: the respective noise property
-
+            // Carlot constructor
+            var salesLot = new Carlot();
 
             //Now that the Car class is created we can instanciate 3 new cars
             //Set the properties for each of the cars
             //Call each of the methods for each car
+
+            var carOne= new Car();
+
+            carOne.Year = 2022;
+            carOne.Make = "Chevrolet";
+            carOne.Model = "Suburban";
+            carOne.HonkNoise = "Honk!";
+            carOne.EngineNoise = "VROOM!";
+            carOne.IsDriveable = true;
+
+            salesLot.listcars.Add(carOne);
+
+            var carTwo = new Car()
+            {
+                Year = 2020,
+                Make = "Tesla",
+                Model = "Roadster",
+                HonkNoise = "Blaap!",
+                EngineNoise = "(silence)",
+                IsDriveable = true
+            };
+
+            salesLot.listcars.Add(carTwo);
+
+
+            var carThree = new Car(2021, "Toyota", "Prius", "(silence)", "BEEP BEEP!", true);
+
+            salesLot.listcars.Add(carThree);
+
+            foreach(var car in salesLot.listcars)
+            {
+                Console.WriteLine($"Year: {car.Year}");
+                Console.WriteLine($"Make: {car.Make}");
+                Console.WriteLine($"Model: {car.Model}");
+                car.MakeEngineNoise(car.EngineNoise);
+                car.MakeHonkNoise(car.HonkNoise);
+                Console.WriteLine();
+            }
 
             //*************BONUS*************//
 
