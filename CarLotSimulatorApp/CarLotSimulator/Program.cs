@@ -42,15 +42,9 @@ namespace CarLotSimulator
 
             salesLot.listcars.Add(carThree);
 
-            foreach(var car in salesLot.listcars)
-            {
-                Console.WriteLine($"Year: {car.Year}");
-                Console.WriteLine($"Make: {car.Make}");
-                Console.WriteLine($"Model: {car.Model}");
-                car.MakeEngineNoise(car.EngineNoise);
-                car.MakeHonkNoise(car.HonkNoise);
-                Console.WriteLine();
-            }
+            salesLot.listcars.ListCars(salesLot.listcars);
+
+            
 
             //*************BONUS*************//
 
