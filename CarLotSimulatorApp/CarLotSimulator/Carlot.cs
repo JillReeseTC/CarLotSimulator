@@ -4,8 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-
-
+    
 namespace CarLotSimulator
 {
     public class Carlot
@@ -29,6 +28,7 @@ namespace CarLotSimulator
                 item.MakeEngineNoise(item.EngineNoise);
                 item.MakeHonkNoise(item.HonkNoise);
                 Console.WriteLine();
+               
             }
         }
 

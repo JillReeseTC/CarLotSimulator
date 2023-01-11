@@ -1,6 +1,8 @@
 ﻿using System;
 using Microsoft.VisualBasic;
 
+
+
 namespace CarLotSimulator
 {
     class Program
@@ -42,7 +44,7 @@ namespace CarLotSimulator
 
             salesLot.listcars.Add(carThree);
 
-            salesLot.listcars.ListCars(salesLot.listcars);
+            salesLot.ListCars(salesLot.listcars);
 
             
 
