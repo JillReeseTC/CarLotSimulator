@@ -26,6 +26,7 @@ namespace CarLotSimulator
             carOne.IsDriveable = true;
 
             salesLot.listcars.Add(carOne);
+            CarLotting.numberOfCars++;
 
             var carTwo = new Car()
             {
@@ -38,13 +39,20 @@ namespace CarLotSimulator
             };
 
             salesLot.listcars.Add(carTwo);
+            CarLotting.numberOfCars++;
 
 
             var carThree = new Car(2021, "Toyota", "Prius", "(silence)", "BEEP BEEP!", true);
 
             salesLot.listcars.Add(carThree);
+            CarLotting.numberOfCars++;
 
             salesLot.ListCars(salesLot.listcars);
+
+            Console.WriteLine();
+            Console.WriteLine();
+            Console.WriteLine("Static Exercise class addition:");
+            Console.WriteLine($"The number of cars in the lot is {CarLotting.numberOfCars}.");
 
             
 
